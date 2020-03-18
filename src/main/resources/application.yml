@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: spring-boot-template-service
+---
+spring:
+  profiles: local
+  cloud:
+    stream:
+      bindings:
+        template-channel:
+          contentType: application/json
+          destination: com.template.dispatch
+          group: template.queue
+    config:
+      enabled: false
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: TEMPLATE
+# By default, rabbitMQ uses a topic exchange. To send messages to multiple consumers, use a 'fanout' exchange.
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+server:
+  port: 8080
+logging:
+  level:
+    io.overledger.springboottemplate: ERROR
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "ea789c78-95ce-4eeb-b744-54502e76e9fb",
+		"name": "Template Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "template request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"templateField\": \"hello-spring\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/templates",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"templates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "template request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/templates/hello-spring",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"templates",
+						"hello-spring"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
