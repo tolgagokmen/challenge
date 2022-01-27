@@ -40,6 +40,10 @@ was added spring-cloud-starter-stream-rabbit to pom.xml
 
 ![img.png](src/main/resources/imgs/img_r.png)
 
+removed --- from application.yml
+
+![img_1.png](src/main/resources/imgs/img_133.png)
+
 1-)Post rest service called
 
 ![](src/main/resources/imgs/2.png)
