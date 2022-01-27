@@ -8,9 +8,9 @@ Services communicate by publishing domain events via these endpoints or channels
 
 WebFlux that supports non-blocking reactive streams for is providing a Reactive RESTful Web Service and It is fully non-blocking, supports Reactive Streams
 
-need for a non-blocking web stack to handle concurrency with a small number of threads and scale with fewer hardware resources.
-Servlet 3.1 did provide an API for non-blocking I/O.
-Spring WebFlux moves away from the thread-per-request blocking model
+Need for a non-blocking web stack to handle concurrency with a small number of threads and scale with fewer hardware resources.<br />
+Servlet 3.1 did provide an API for non-blocking I/O.<br />
+Spring WebFlux moves away from the thread-per-request blocking model<br />
 Spring WebFlux will allow you to more efficiently leverage CPU and network resources,
 
 
