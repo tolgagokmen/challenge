@@ -36,7 +36,7 @@ public class TemplateService {
 
         // Saves to the database. Comment this out if you want to test the Consumer functionality, as the TemplateChannelHandler
         // is used to save to the database.
-        saveToDatabase(templateRequest);
+        //saveToDatabase(templateRequest);
 
         List<TemplateDocument> templateMessages = this.templateRepository
                 .findAllByTemplateField(templateRequest.getTemplateField())
