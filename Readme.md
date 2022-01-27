@@ -14,9 +14,9 @@ Spring WebFlux moves away from the thread-per-request blocking model
 Spring WebFlux will allow you to more efficiently leverage CPU and network resources,
 
 
-Bindings — a collection of interfaces that identify the input and output channels declaratively
-Binder — messaging-middleware implementation such as Kafka or RabbitMQ
-Channel — represents the communication pipe between messaging-middleware and the application
+Bindings — a collection of interfaces that identify the input and output channels declaratively<br />
+Binder — messaging-middleware implementation such as Kafka or RabbitMQ<br />
+Channel — represents the communication pipe between messaging-middleware and the application<br />
 StreamListeners — message-handling methods in beans that will be automatically invoked on a message from the channel after the MessageConverter does the serialization/deserialization between middleware-specific events and domain object types / POJOs
 
 
